@@ -1,0 +1,169 @@
+:root{
+    --dark: #374151;
+    --darker: #1F2937;
+    --darkest: #111827;
+    --gray: #6B7280;
+    --light #EEE;
+    --pink: #EC4899;
+    --purple: #8B5Cf6;
+}
+
+#item-name-input{
+    background-color: #D9AC2550;
+}
+
+.new-name{
+    background-color: #D9AC2550;
+}
+
+#item-date-input{
+    background-color: #D98F4E50;
+}
+
+.new-date{
+    background-color: #D98F4E50;
+}
+
+#item-amount-input{
+    background-color: #A6705150;
+}
+
+.new-amount{
+    background-color: #A6705150;
+}
+
+body{
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    width: 100%;
+    background-color: #F2DBAE;
+}
+
+header h1{
+    font-size: 2.5rem;
+}
+ header{
+     width: 300px;
+     margin: 0 auto;
+     padding-bottom: 20px;
+ }
+
+#new-item-form label{
+    display: flex;
+    border: none;
+}
+
+#new-item-form {
+    text-align: left;
+        display: grid;
+    width: 100%;
+    }
+
+    .input{
+        margin-bottom: 10px;
+    }
+
+    .input input{
+        border-radius: 10px;
+        border: 3px solid #F2F2F2 ;
+        height: 30px;
+        width: 100%;
+
+    }
+
+    .submit input{
+        margin-top: 20px;
+        height: 40px;
+        border-radius: 5px;
+        border: 3px solid #D9AC2550;
+        background-color: #D9AC25;
+        cursor: pointer;
+    }
+
+    .submit input:hover{
+        opacity: 0.8;
+        color: #fff;
+    }
+
+    .submit input:active{
+        opacity: 0.6;
+        color: #fff;
+    }
+
+  
+
+      .container input{
+          display: grid;
+          border: none;
+          border-radius: 5px;
+          text-align: center;
+          grid-template-columns: repeat(4, 1fr);
+          grid-template-rows: repeat(auto-fill, 1fr);
+         
+      }
+
+      .actions{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 10px;
+          margin: 0 auto;
+      }
+
+      .edit{
+        padding: 10px;
+        background-color:rgba(100, 148, 237, 0.644);
+        border-radius: 10px;
+        border: none;
+    }
+
+    .delete{
+        padding: 10px;
+        background-color:rgba(220, 20, 60, 0.692);
+
+        border-radius: 10px;
+        border: none;
+    
+    }
+
+    .delete:hover, .edit:hover{
+        opacity: 0.8;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .delete:active, .edit:active{
+        opacity: 0.6;
+        color: #fff;
+    }
+
+
+    .container{
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: repeat(auto-fill, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+        margin-bottom: 10px;
+        width: 50%;
+    }
+
+    @media only screen and (max-width: 600px) {
+            .container{
+            display: grid;
+            grid-template-rows: repeat(auto-fill, 1fr);
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+            margin-bottom: 10px;
+            width: 90%;
+            margin-bottom: 5px;
+           position: relative;
+        }
+    
+        .container input{
+            width: 100%;
+            margin: 0;
+        }
+
+      }
+
+      
